@@ -1,0 +1,11 @@
+---
+
+version: '3.7'
+services:
+  python-cuda:
+    build:
+      context: docker/python-cuda/10.1
+      dockerfile: ./Dockerfile
+      args:
+        PYTHON_VERSION: 3.7.7-buster
+    image: softwrdev/python-cuda:10.1-py37-buster
